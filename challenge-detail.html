@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Challenge Detail</title>
+
+<link rel="stylesheet" href="css/challengeStyles.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header class="topbar">
+
+<h2 class="title" id="challengeTitle">💧 Challenge</h2>
+
+</header>
+
+
+<!-- MAIN CONTENT -->
+
+<div class="container">
+
+<a href="challenges.html" class="back">← Back</a>
+
+
+<!-- CHALLENGE CARD -->
+
+<div class="detail-card">
+
+<h2 id="challengeName">Challenge</h2>
+
+<p id="challengeDescription">
+Complete the water-saving task and upload proof photos.
+</p>
+
+<div class="badges">
+
+<span class="points" id="challengePoints">⭐ 20 pts</span>
+
+<span class="water" id="challengeWater">💧 12L</span>
+
+</div>
+
+</div>
+
+
+<!-- WARNING BOX -->
+
+<div class="warning-box">
+📋 Make sure both photos show the challenge action clearly.
+</div>
+
+
+<div class="note">
+⚠ Photos should show the challenge action clearly.
+Both before and after photos are required.
+</div>
+
+
+<!-- START BUTTON -->
+
+<a href="capture.html">
+<button class="start-btn">
+📷 Start Challenge
+</button>
+</a>
+
+</div>
+
+
+<!-- BOTTOM NAVIGATION -->
+
+<nav class="bottomnav">
+
+<a href="home.html">
+🏠
+<br>
+Home
+</a>
+
+<a class="active" href="challenges.html">
+💧
+<br>
+Challenges
+</a>
+
+<a href="dashboard.html">
+📊
+<br>
+Dashboard
+</a>
+
+<a href="impact.html">
+📈
+<br>
+Impact
+</a>
+
+<a href="leaderboard.html">
+🏆
+<br>
+Board
+</a>
+
+</nav>
+
+
+<script>
+
+function toggleTheme(){
+document.body.classList.toggle("dark");
+}
+
+function logout(){
+alert("Logged Out");
+window.location.href="login.html";
+}
+
+
+/* ---------- Load Challenge Data from URL ---------- */
+
+const params = new URLSearchParams(window.location.search);
+const challenge = params.get("challenge");
+
+const challengeData = {
+
+tap: {
+title: "💧 Turn off tap while brushing",
+desc: "Save water by turning off the tap while brushing your teeth. A running tap wastes up to 6 liters per minute!",
+points: "⭐ 20 pts",
+water: "💧 12L"
+},
+
+shower: {
+title: "💧 Reduce shower time",
+desc: "Shorten your shower time by 2 minutes to conserve water.",
+points: "⭐ 30 pts",
+water: "💧 30L"
+},
+
+plants: {
+title: "💧 Reuse water for plants",
+desc: "Use leftover water (from washing vegetables etc.) to water plants.",
+points: "⭐ 15 pts",
+water: "💧 8L"
+},
+
+bucket: {
+title: "💧 Use bucket instead of hose",
+desc: "Use a bucket instead of a hose for cleaning tasks.",
+points: "⭐ 40 pts",
+water: "💧 150L"
+}
+
+};
+
+if (challenge && challengeData[challenge]) {
+
+document.getElementById("challengeTitle").innerText = challengeData[challenge].title;
+
+document.getElementById("challengeName").innerText = challengeData[challenge].title;
+
+document.getElementById("challengeDescription").innerText = challengeData[challenge].desc;
+
+document.getElementById("challengePoints").innerText = challengeData[challenge].points;
+
+document.getElementById("challengeWater").innerText = challengeData[challenge].water;
+
+}
+
+</script>
+
+</body>
+</html>

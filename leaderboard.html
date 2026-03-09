@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>HydroHero Leaderboard</title>
+
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/leaderboard.css">
+
+</head>
+
+<body>
+<nav class="nav-bar">
+
+<div class="nav-logo">
+<div class="nav-logo-icon">💧</div>
+<span style="color:rgb(38, 111, 184)">Leaderboard</span>
+</div>
+
+<div class="nav-menu-container" id="navMenu">
+
+<a href="home.html" class="nav-link ">
+<span>Home</span>
+</a>
+
+<a href="challenges.html" class="nav-link">
+<span>Challenges</span>
+</a>
+
+<a href="dashboard.html" class="nav-link">
+<span>Dashboard</span>
+</a>
+
+<a href="impact.html" class="nav-link">
+<span>Impact</span>
+</a>
+
+<a href="leaderboard.html" class="nav-link active">
+<span>Leaderboard</span>
+</a>
+
+<button class="logout-btn" onclick="logout()">Logout</button>
+
+</div>
+
+</nav>
+
+<main class="leaderboard-container">
+
+    <!-- Water Hero -->
+    <section class="leaderboard-hero">
+
+        <div id="heroCard"></div>
+
+    </section>
+
+
+    <!-- Top Communities -->
+    <section class="leaderboard-section">
+
+        <h2 class="leaderboard-section-title">💧 Top Communities</h2>
+
+        <div id="communitiesList"></div>
+
+    </section>
+
+
+    <!-- Top Users -->
+    <section class="leaderboard-section">
+
+        <h2 class="leaderboard-section-title">⭐ Top Users</h2>
+
+        <div id="usersList"></div>
+
+    </section>
+
+</main>
+
+<script src="js/leaderboard.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>

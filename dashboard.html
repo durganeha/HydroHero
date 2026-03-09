@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>HydroHero Dashboard</title>
+
+<link rel="stylesheet" href="css/dashboard.css">
+<link rel="stylesheet" href="css/home.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<nav class="nav-bar">
+
+<div class="nav-logo">
+<div class="nav-logo-icon">💧</div>
+<span style="color:rgb(38, 111, 184)">Dashboard</span>
+</div>
+
+<div class="nav-menu-container" id="navMenu">
+
+<a href="home.html" class="nav-link ">
+<span>Home</span>
+</a>
+
+<a href="challenges.html" class="nav-link">
+<span>Challenges</span>
+</a>
+
+<a href="dashboard.html" class="nav-link active">
+<span>Dashboard</span>
+</a>
+
+<a href="impact.html" class="nav-link">
+<span>Impact</span>
+</a>
+
+<a href="leaderboard.html" class="nav-link">
+<span>Leaderboard</span>
+</a>
+
+<button class="logout-btn" onclick="logout()">Logout</button>
+</div>
+
+</nav>
+
+
+<main class="dashboard-container">
+
+<!-- WATER SAVED CARD -->
+
+<div class="dashboard-card water-card">
+
+<div class="water-icon">💧</div>
+
+<h2 id="waterCounter">0 L</h2>
+
+<p>Total Water Saved</p>
+
+<div class="water-substats">
+
+<span>Today: <b id="todayWater">0 L</b></span>
+
+<span>This Week: <b id="weekWater">0 L</b></span>
+
+</div>
+
+</div>
+
+
+<!-- CURRENT CHALLENGE -->
+
+<div class="dashboard-card challenge-card">
+
+<h3>Current Challenge</h3>
+
+<p>Turn off tap while brushing</p>
+
+<div class="progress-container">
+
+<div class="progress-bar" style="width:40%"></div>
+
+</div>
+
+<span class="challenge-progress">Progress: 1 / 3 days</span>
+
+</div>
+
+
+<!-- STATS ROW -->
+
+<div class="stats-row">
+
+<div class="dashboard-card small-card">
+
+<h3>🔥 Streak</h3>
+
+<p class="stat-number">3 Days</p>
+
+</div>
+
+<div class="dashboard-card small-card">
+
+<h3>🏆 Rank</h3>
+
+<p class="stat-number">#12</p>
+
+</div>
+
+</div>
+
+
+<!-- MINI GRAPH -->
+
+<div class="dashboard-card">
+
+<h3>Weekly Water Savings</h3>
+
+<canvas id="waterChart"></canvas>
+
+</div>
+
+
+<!-- BADGES -->
+
+<section class="dashboard-badges">
+
+<h2>Badges</h2>
+
+<div class="badges-grid">
+
+<div class="badge locked" id="waterSaver">
+<div class="badge-icon">
+<div class="hexagon">💧</div>
+</div>
+<h4>Water Saver</h4>
+<p>Save 50L</p>
+</div>
+
+<div class="badge locked" id="ecoHero">
+<div class="badge-icon">
+<div class="hexagon">🌱</div>
+</div>
+<h4>Eco Hero</h4>
+<p>5 Challenges</p>
+</div>
+
+<div class="badge locked" id="champion">
+<div class="badge-icon"><div class="hexagon">
+🏆</div></div>
+<h4>Champion</h4>
+<p>200 Points</p>
+</div>
+
+<div class="badge locked" id="centurion">
+<div class="badge-icon"><div class="hexagon">
+💎</div></div>
+<h4>Centurion</h4>
+<p>Save 100L</p>
+</div>
+
+<div class="badge locked" id="streakMaster">
+<div class="badge-icon"><div class="hexagon">
+🔥</div></div>
+<h4>Streak Master</h4>
+<p>500 Points</p>
+</div>
+
+<div class="badge locked" id="firstDrop">
+<div class="badge-icon"><div class="hexagon">
+✨</div></div>
+<h4>First Drop</h4>
+<p>First Challenge</p>
+</div>
+</div>
+
+</section>
+
+
+<!-- LEVEL PROGRESS -->
+
+<div class="dashboard-card level-card">
+
+<div class="level-header">
+
+<h3 id="levelNumber">Level 1</h3>
+
+<span id="nextLevelText">100 pts to next level</span>
+
+</div>
+
+<div class="progress-container">
+
+<div class="progress-bar level-progress" id="levelProgress"></div>
+
+</div>
+
+</div>
+
+</main>
+
+
+<script src="js/dashboard.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

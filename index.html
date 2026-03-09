@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>HydroHero Login</title>
+
+<link rel="stylesheet" href="css/login.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="login-container">
+
+<div class="login-card">
+
+<div class="login-brand">
+<h1 class="login-logo">💧 HydroHero</h1>
+<p class="login-tagline">Welcome Back Water Hero</p>
+</div>
+
+<form class="login-form" id="loginForm">
+
+<input type="email" id="loginEmail" class="login-input" placeholder="Enter your email" required>
+
+<input type="password" id="loginPassword" class="login-input" placeholder="Enter your password" required>
+
+<button type="submit" class="login-button">
+Login
+</button>
+
+</form>
+
+<p class="login-redirect">
+New to HydroHero?
+<a href="signup.html">Create Account</a>
+</p>
+
+</div>
+
+</div>
+<script>
+
+document.getElementById("loginForm").addEventListener("submit", function(e){
+
+e.preventDefault();
+
+let email = document.getElementById("loginEmail").value;
+let password = document.getElementById("loginPassword").value;
+
+let users = JSON.parse(localStorage.getItem("users")) || [];
+
+let foundUser = users.find(user => user.email === email && user.password === password);
+
+if(foundUser){
+
+localStorage.setItem("hydroUser", JSON.stringify(foundUser));
+
+window.location.href = "home.html";
+
+}else{
+
+alert("Invalid email or password");
+
+}
+
+});
+
+
+</script>
+</body>
+
+</html>

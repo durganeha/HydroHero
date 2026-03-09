@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>HydroHero Impact</title>
+
+<link rel="stylesheet" href="css/impact.css">
+<link rel="stylesheet" href="css/home.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="impact-container">
+
+<!-- Header -->
+
+<nav class="nav-bar">
+
+<div class="nav-logo">
+<div class="nav-logo-icon">💧</div>
+<span style="color:rgb(38, 111, 184)">Impact</span>
+</div>
+
+<div class="nav-menu-container" id="navMenu">
+
+<a href="home.html" class="nav-link ">
+<span>Home</span>
+</a>
+
+<a href="challenges.html" class="nav-link">
+<span>Challenges</span>
+</a>
+
+<a href="dashboard.html" class="nav-link">
+<span>Dashboard</span>
+</a>
+
+<a href="impact.html" class="nav-link active">
+<span>Impact</span>
+</a>
+
+<a href="leaderboard.html" class="nav-link">
+<span>Leaderboard</span>
+</a>
+
+<button class="logout-btn" onclick="logout()">Logout</button>
+
+</div>
+
+</nav>
+
+
+<!-- Community Stats -->
+
+<div class="impact-stats">
+
+<div class="impact-card impact-stat-card">
+<h2 class="impact-stat-number">2400L</h2>
+<p class="impact-stat-label">Water Saved</p>
+</div>
+
+<div class="impact-card impact-stat-card">
+<h2 class="impact-stat-number">150</h2>
+<p class="impact-stat-label">People Helped</p>
+</div>
+
+</div>
+
+
+<!-- Weekly Chart -->
+
+<div class="impact-card">
+
+<h3 class="impact-section-title">Water Saved This Week</h3>
+
+<canvas id="impactWeeklyChart"></canvas>
+
+</div>
+
+
+<!-- Water Saved by Activity -->
+
+<div class="impact-card">
+
+<h3 class="impact-section-title">Where Water Was Saved</h3>
+
+<div class="impact-bar-container">
+
+<div class="impact-bar-item">
+<div class="impact-bar" style="height:80px"></div>
+<p>Hygiene</p>
+</div>
+
+<div class="impact-bar-item">
+<div class="impact-bar" style="height:45px"></div>
+<p>Garden</p>
+</div>
+
+<div class="impact-bar-item">
+<div class="impact-bar" style="height:65px"></div>
+<p>Kitchen</p>
+</div>
+
+<div class="impact-bar-item">
+<div class="impact-bar" style="height:35px"></div>
+<p>General</p>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- Community Goal -->
+
+<div class="impact-card">
+
+<h3 class="impact-section-title">Community Goal</h3>
+
+<p class="impact-goal-text">
+2400 / 5000 L saved this week
+</p>
+
+<div class="impact-progress-bar">
+
+<div class="impact-progress"></div>
+
+</div>
+
+</div>
+
+
+<!-- Real World Meaning -->
+
+<div class="impact-card">
+
+<h3 class="impact-section-title">What This Means</h3>
+
+<div class="impact-list">
+
+<p>🚿 48 showers saved</p>
+<p>🌳 Water for 15 trees</p>
+<p>🥤 Drinking water for 150 people</p>
+
+</div>
+
+</div>
+
+
+<!-- Community Message -->
+
+<div class="impact-card impact-community-message">
+
+❤️ Your community saved enough water to provide drinking water for
+<b>150 people</b> 🌍
+
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/impact.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

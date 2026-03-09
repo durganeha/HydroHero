@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HydroHero Challenges</title>
+
+<link rel="stylesheet" href="css/challengeStyles.css">
+<link rel="stylesheet" href="css/home.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<nav class="nav-bar">
+
+<div class="nav-logo">
+<div class="nav-logo-icon">💧</div>
+<span>Challenges</span>
+</div>
+
+<div class="nav-menu-container" id="navMenu">
+
+<a href="home.html" class="nav-link">
+<span>Home</span>
+</a>
+
+<a href="challenges.html" class="nav-link active">
+<span>Challenges</span>
+</a>
+
+<a href="dashboard.html" class="nav-link">
+<span>Dashboard</span>
+</a>
+
+<a href="impact.html" class="nav-link">
+<span>Impact</span>
+</a>
+
+<a href="leaderboard.html" class="nav-link">
+<span>Leaderboard</span>
+</a>
+
+<button class="logout-btn" onclick="logout()">Logout</button>
+
+</div>
+
+</nav>
+
+
+
+<!-- CONTENT -->
+
+<div class="container">
+
+
+<!-- Challenge 1 -->
+
+<div class="challenge-card blue">
+
+<h3>💧 Turn off tap while brushing</h3>
+
+<p>💧 12L saved &nbsp;&nbsp; ⭐ 20 pts</p>
+
+<a href="challenge-detail.html?challenge=tap">
+<button type="button" class="start-challenge">Start Challenge</button>
+</a>
+
+</div>
+
+
+<!-- Challenge 2 -->
+
+<div class="challenge-card blue">
+
+<h3>💧 Reduce shower time by 2 minutes</h3>
+
+<p>💧 30L saved &nbsp;&nbsp; ⭐ 30 pts</p>
+
+<a href="challenge-detail.html?challenge=shower">
+<button type="button" class="start-challenge">Start Challenge</button>
+</a>
+
+</div>
+
+
+<!-- Challenge 3 -->
+
+<div class="challenge-card green">
+
+<h3>💧 Reuse water for plants</h3>
+
+<p>💧 8L saved &nbsp;&nbsp; ⭐ 15 pts</p>
+
+<a href="challenge-detail.html?challenge=plants">
+<button type="button" class="start-challenge">Start Challenge</button>
+</a>
+
+</div>
+
+
+<!-- Challenge 4 -->
+
+<div class="challenge-card blue">
+
+<h3>💧 Use bucket instead of hose</h3>
+
+<p>💧 150L saved &nbsp;&nbsp; ⭐ 40 pts</p>
+
+<a href="challenge-detail.html?challenge=bucket">
+<button type="button" class="start-challenge">Start Challenge</button>
+</a>
+
+</div>
+
+</div>
+
+
+
+
+<script>
+
+function toggleTheme(){
+document.body.classList.toggle("dark");
+}
+
+function logout(){
+alert("Logged Out");
+window.location.href="login.html";
+}
+
+</script>
+
+<!-- Only challenges script needed here -->
+<script src="js/challenges.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
