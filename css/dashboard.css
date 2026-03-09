@@ -1,0 +1,155 @@
+body{
+font-family:'Poppins',sans-serif;
+background:#F5FAFF;
+margin:0;
+color:#1E293B;
+}
+/* ---------------------------------
+DASHBOARD PAGE STYLES
+---------------------------------*/
+/* HEADER */
+
+.dashboard-header{
+padding:20px;
+font-weight:600;
+background:linear-gradient(#BDE8F5,#f5faff);
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* MAIN CONTAINER */
+
+.dashboard-container{
+padding:20px;
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+/* CARD STYLE */
+
+.dashboard-card{
+background:white;
+border-radius:16px;
+padding:20px;
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* WATER CARD */
+
+.water-card{
+text-align:center;
+}
+
+.water-icon{
+font-size:32px;
+}
+
+.water-card h2{
+font-size:32px;
+margin:10px 0;
+}
+
+.water-substats{
+display:flex;
+justify-content:space-around;
+color:#64748B;
+margin-top:10px;
+}
+
+/* PROGRESS BAR */
+
+.progress-container{
+background:#E2E8F0;
+border-radius:10px;
+height:10px;
+margin-top:10px;
+overflow:hidden;
+}
+
+.progress-bar{
+background:#22C55E;
+height:100%;
+border-radius:10px;
+}
+
+/* STATS ROW */
+
+.stats-row{
+display:flex;
+gap:20px;
+}
+
+.small-card{
+flex:1;
+text-align:center;
+}
+
+.stat-number{
+font-size:22px;
+font-weight:600;
+}
+
+/* BADGES */
+
+.dashboard-badges h2{
+margin-bottom:10px;
+}
+
+.badges-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.badge.locked{
+opacity:0.35;
+filter:grayscale(100%);
+}
+
+.badge{
+text-align:center;
+padding:10px;
+}
+
+.badge-icon{
+font-size:28px;
+margin-bottom:8px;
+}
+
+/* HEXAGON BADGE */
+
+.hexagon{
+
+width:85px;
+height:85px;
+
+background:#E2E8F0;
+
+clip-path:polygon(
+25% 5%, 
+75% 5%, 
+100% 50%, 
+75% 95%, 
+25% 95%, 
+0% 50%
+);
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-size:28px;
+
+margin:auto;
+margin-bottom:10px;
+
+}
+
+/* LEVEL */
+
+.level-header{
+display:flex;
+justify-content:space-between;
+margin-bottom:10px;
+}
+

@@ -1,0 +1,122 @@
+/* =========================
+   HydroHero Signup Page
+========================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins', sans-serif;
+}
+
+body{
+background:#4989c435;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+/* Container */
+
+.signup-container{
+width:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px;
+}
+
+/* Card */
+
+.signup-card{
+background:white;
+padding:40px;
+border-radius:12px;
+width:380px;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+text-align:center;
+}
+
+/* Brand */
+
+.signup-logo{
+color:#1C4D8D;
+margin-bottom:5px;
+}
+
+.signup-tagline{
+color:#4988C4;
+font-size:14px;
+margin-bottom:25px;
+}
+
+/* Form */
+
+.signup-form{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+/* Input Group */
+
+.signup-input-group{
+display:flex;
+flex-direction:column;
+text-align:left;
+}
+
+.signup-label{
+font-size:14px;
+margin-bottom:5px;
+color:#0F2854;
+}
+
+.signup-input{
+padding:10px;
+border:1px solid #BDE8F5;
+border-radius:6px;
+outline:none;
+transition:0.2s;
+}
+
+.signup-input:focus{
+border-color:#4988C4;
+}
+
+/* Button */
+
+.signup-button{
+margin-top:10px;
+padding:12px;
+border:none;
+border-radius:8px;
+background:#1C4D8D;
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:0.2s;
+}
+
+.signup-button:hover{
+background:#539bdf;
+}
+
+/* Redirect */
+
+.signup-redirect{
+margin-top:20px;
+font-size:14px;
+color:#0F2854;
+}
+
+.signup-redirect a{
+color:#1C4D8D;
+text-decoration:none;
+font-weight:500;
+}
+
+.signup-redirect a:hover{
+text-decoration:underline;
+}

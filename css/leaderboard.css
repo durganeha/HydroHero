@@ -1,0 +1,127 @@
+/* =========================
+   LEADERBOARD PAGE
+========================= */
+
+.leaderboard-header{
+padding:20px;
+background:white;
+box-shadow:0 4px 10px rgba(0,0,0,0.05);
+}
+
+.leaderboard-title{
+font-size:24px;
+color:#1d7ddc;
+}
+
+.leaderboard-container{
+padding:30px 20px;
+max-width:700px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:35px;
+}
+
+/* HERO CARD */
+
+.leaderboard-hero{
+background:linear-gradient(135deg,#2b6ee7,#1b3fa0);
+padding:35px;
+border-radius:20px;
+color:white;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.leaderboard-hero h2{
+font-size:18px;
+margin-bottom:10px;
+}
+
+.leaderboard-hero h1{
+font-size:34px;
+margin-bottom:12px;
+}
+
+.hero-stats{
+display:flex;
+justify-content:center;
+gap:25px;
+font-size:16px;
+opacity:0.9;
+}
+
+
+/* SECTIONS */
+
+.leaderboard-section{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.leaderboard-section-title{
+font-size:20px;
+font-weight:600;
+}
+
+
+/* LEADERBOARD ROWS */
+
+.leaderboard-row{
+display:flex;
+align-items:center;
+background:white;
+padding:18px 24px;
+border-radius:14px;
+box-shadow:0 8px 18px rgba(0,0,0,0.08);
+margin-bottom:12px;
+}
+
+/* rank column */
+
+.leaderboard-rank{
+font-size:20px;
+font-weight:700;
+width:60px;
+text-align:center;
+}
+
+/* name column */
+
+.leaderboard-name{
+flex:1;
+font-size:16px;
+}
+
+/* score column */
+
+.leaderboard-score{
+min-width:80px;
+text-align:right;
+color:#1d7ddc;
+font-weight:600;
+}
+
+
+/* TOP 3 COLORS */
+
+.leaderboard-row:nth-child(1) .leaderboard-rank{
+color:#f59e0b;
+}
+
+.leaderboard-row:nth-child(2) .leaderboard-rank{
+color:#64748b;
+}
+
+.leaderboard-row:nth-child(3) .leaderboard-rank{
+color:#ea580c;
+}
+
+
+/* HOVER EFFECT */
+
+.leaderboard-row:hover{
+transform:translateY(-3px);
+transition:0.2s;
+}
