@@ -1,0 +1,24 @@
+{
+  "heroOfWeek": {
+    "name": "Anushree",
+    "points": 350,
+    "waterSaved": 480,
+    "challenges": 12
+  },
+
+  "communities": [
+    {"name":"Village A","water":3200},
+    {"name":"Village B","water":2700},
+    {"name":"School C","water":2100},
+    {"name":"Town D","water":1800},
+    {"name":"Colony E","water":1500}
+  ],
+
+  "users":[
+    {"name":"Anushree","points":350},
+    {"name":"Rahul","points":310},
+    {"name":"Sneha","points":280},
+    {"name":"Arjun","points":250},
+    {"name":"Priya","points":220}
+  ]
+}
